@@ -21,6 +21,4 @@ class Offset
     date_keys
   end
 
-  
-
 end

@@ -14,6 +14,3 @@ module Initializer
     Date.today.strftime("%d%m%y")
   end
 end
-
-# Square the numeric form (1672401025)
-# Take the last four digits (1025)
