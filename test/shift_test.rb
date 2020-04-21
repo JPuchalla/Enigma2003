@@ -41,8 +41,8 @@ class ShiftTest < Minitest::Test
   end
 
   def test_it_can_shift_the_charset
-    skip
-    shifts = {a: 3, b: 27, c: 73, d: 20}
+
+    shifts = {A: 3, B: 27, C: 73, D: 20}
     expected = ['t', 'u', 'v', 'w', 'x', 'y', 'z', ' ', 'a', 'b', 'c', 'd',
       'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's']
 
