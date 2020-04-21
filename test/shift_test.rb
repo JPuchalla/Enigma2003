@@ -49,4 +49,15 @@ class ShiftTest < Minitest::Test
     assert_equal expected, @shift.shift_charset(14, shifts)
   end
 
+  def test_it_can_shift_the_message_forward_and_back
+   message = "hello"
+   encrypted_message = "zescf"
+
+   shifts = @shift.generate_total_shift(1)
+   assert_equal encrypted_message, @shift.change_string(message, shifts)
+
+   shifts = @shift.generate_total_shift(-1)
+   assert_equal message, @shift.change_string(encrypted_message, shifts)
+  end
+
 end
