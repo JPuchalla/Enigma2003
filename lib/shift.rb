@@ -36,7 +36,7 @@ class Shift
     return character_set.rotate(shift[:D]) if index % 4 == 3
   end
 
-  def change_string(message, shifts)
+  def change_string(message, shifts = generate_total_shift(direction))
    new_message = String.new
    message.each_char.with_index do |char, index|
      if character_set.include?(char)
