@@ -19,8 +19,8 @@ class KeyTest < Minitest::Test
   end
 
   def test_it_can_return_hash_of_number_keys
-
     expected = {:A=>12, :B=>23, :C=>34, :D=>45}
     assert_equal expected, @key.number_formatter
   end
+  
 end
