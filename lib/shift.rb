@@ -22,9 +22,20 @@ class Shift
     message.chars
   end
 
+  def generate_total_shift(direction)
+    shifter.reduce({}) { |hash, (key, value) | hash[ key ] = value * direction ; hash }
+  end
+
   def message_index(message)
     split_message(message).map { |letter| character_set.index(letter) }
   end
 
+
+  def shift_charset(index, shift)
+    return character_set.rotate(shift[:A]) if index % 4 == 0
+    return character_set.rotate(shift[:B]) if index % 4 == 1
+    return character_set.rotate(shift[:C]) if index % 4 == 2
+    return character_set.rotate(shift[:D]) if index % 4 == 3
+  end
 
 end
