@@ -11,4 +11,4 @@ Test Driven Development: 3.2
 Test coverage has consistently been 100.00% throughout the project with a few stubs used. Edge cases could use some more work overall. 17 runs, 19 assertions, 130 / 130 LOC (100.0%) covered. This is of course excluding the non functioning Enigma file which contains the encrypt method.
 
 Version Control: 3.5
-30+ commits, commit messages are thorough in describing what each commit holds. All Pull Requests show all added methods, tests, deletions, and overall coverage. Multiple branches, three total including master.
+40+ commits, commit messages are thorough in describing what each commit holds. All Pull Requests show all added methods, tests, deletions, and overall coverage. Multiple branches, three total including master.
